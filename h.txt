@@ -1,0 +1,21 @@
+fun main() {
+    val name = "Nguyễn Ngọc Huy - 2415053122119"
+    val lop = "24T1"
+    println("Xin chào: ${name}")
+    println("Lớp sinh hoạt: ${lop}")
+    val math = 9.0
+    val programming = 8.0
+    val database = 7.0
+
+    val total = math + programming + database
+    val average = total / 3
+    val highest = maxOf(math, programming, database)
+    println("Tổng điểm: $total")
+    println("Điểm trung bình (GPA): %.2f".format(average))
+    println("Điểm cao nhất: $highest")
+    if (average >= 5.0) {
+        println("Sinh viên đạt: Có")
+    } else {
+        println("Sinh viên đạt: Không")
+    }
+}
